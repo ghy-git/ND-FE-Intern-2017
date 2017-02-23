@@ -1,0 +1,86 @@
+.header {
+    width: 90%;
+    height: 150px;
+    margin: 0 auto 0 auto;
+    background-color: #522A5C;
+    position: relative;
+}
+
+.header #myMame {
+    color:white;
+    width: 110px;
+    height: 20px;
+    position:absolute;
+    left: 10%;
+    bottom: 20%;
+    font-size: 170%;
+    margin: 0rem;
+    float: left;
+}
+
+.header nav ul{
+    list-style-type:none;
+    display:block;
+    height:40px;
+    width:350px;
+    margin:0px;
+    padding: 0 0 0 1px;
+    float:left;
+    <!-- ¶¨Î» -->
+    vertical-align:bottom;
+    position: absolute;
+    bottom: 10px;
+    right: 150px;
+}
+
+.header nav li{
+    display:inline;
+    weight:100px;
+    height:40px;
+    font-size:130%;
+
+    float:left;
+    line-height:40px;
+    padding:0 30px 0 0;
+}
+
+.header nav li a{
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    padding:2px;
+
+}
+
+.header nav li a:hover{
+    font-size:110%;
+    text-decoration:none;
+}
+
+.header .github{
+    position: absolute;
+    bottom:0px;
+    right:20px;
+    margin:0px;
+}
+.header .github img{
+    height:60px;
+    weight:50px;
+    border: none;
+}
+
+
+.header .header_ham {
+    width:0;
+    height:0;
+    float: right;
+    display: inline;
+}
+.header .header_ham span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0.1px solid;
+    border-radius: 1rem;
+    background-color: #EEEEEE;
+}
