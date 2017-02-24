@@ -1,0 +1,213 @@
+main{
+    width:90%;
+    height:100%;
+    background-color: #EEEEEE;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*响应式开始 第一段 1000px*/
+@media screen and (max-width:1000px) {
+    /*header*/
+    .header {
+        width: 100%;
+        height: 80px;
+    }
+
+    .header #myMame {
+        color: white;
+        width: 110px;
+        height: 20px;
+        position: absolute;
+        left: 30%;
+        bottom: 50%;
+        font-size: 200%;
+        margin: 0rem auto;
+    }
+
+    .header nav {
+        width: 100%;
+    }
+
+    .header .header_ham {
+        float: right;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 3%;
+        bottom: 70%;
+    }
+
+    .header .header_ham span {
+        width: 2.5rem;
+        height: 5px;
+        float: right;
+        margin-top: 0.2rem;
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .header .github {
+        display: none;
+    }
+
+    .showHam {
+        animation: show 1s;
+        -moz-animation: show 1s; /* Firefox */
+        -webkit-animation: show 1s; /* Safari and Chrome */
+        -o-animation: show 1s; /* Opera */
+    }
+
+    @keyframes show {
+        from {
+            height: 0;
+            weight: 0
+        }
+        to {
+            height: 10rem;
+            weight: 100%
+        }
+    }
+    @-moz-keyframes show {
+        from {
+            height: 0;
+            weight: 0
+        }
+        to {
+            height: 10rem;
+            weight: 100%
+        }
+    }
+    @-webkit-keyframes show {
+        from {
+            height: 0;
+            weight: 0
+        }
+        to {
+            height: 10rem;
+            weight: 100%
+        }
+    }
+    @-o-keyframes show {
+        from {
+            height: 0;
+            weight: 0
+        }
+        to {
+            height: 10rem;
+            weight: 100%
+        }
+    }
+    .hideHam {
+        animation: hide 1s;
+        -webkit-animation: hide 1.5s;
+        -moz-animation: hide 1.5s;
+        -o-animation: hide 1.5s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+    }
+
+    @keyframes hide {
+        from {
+            height: 10rem;
+            weight: 100%
+        }
+        to {
+            height: 0;
+            weight: 0
+        }
+    }
+    @-moz-keyframes hide {
+        from {
+            height: 10rem;
+            weight: 100%
+        }
+        to {
+            height: 0;
+            weight: 0
+        }
+    }
+    @-webkit-keyframes hide {
+        from {
+            height: 10rem;
+            weight: 100%
+        }
+        to {
+            height: 0;
+            weight: 0
+        }
+    }
+    @-o-keyframes hide {
+        from {
+            height: 10rem;
+            weight: 100%
+        }
+        to {
+            height: 0;
+            weight: 0
+        }
+    }
+}
+
+
+/*响应式开始   第2段580px */
+@media screen and (max-width:580px) {
+    /*middle*/
+    main{
+        width:100%;
+    }
+
+
+    /*footer*/
+    .footer section{
+        height:100%;
+        display: block;
+        margin:3rem 0 0 0;
+        margin-top: 3rem;
+    }
+    .footer {
+        width: 100%;
+        height: 30rem;
+        margin:0 0;
+        position: relative;
+    }
+
+    .footer .footer_top ul{
+        left: 35%;
+    }
+
+
+    .footer .footer_middle .footer_link{
+        height:10%;
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: nowrap;
+    }
+    .footer .footer_middle .footer_link .link_header{
+        float:left;
+        width:10%;
+        height:1rem;
+        margin: 1rem 0rem 0rem 1rem;
+    }
+    .footer .footer_middle .footer_link ul{
+
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        float: left;
+        margin:1rem 0 0rem 0rem;
+    }
+}
