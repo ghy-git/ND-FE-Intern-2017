@@ -251,6 +251,7 @@
         margin:0 0;
         position: relative;
     }
+<<<<<<< HEAD
 
     .footer .footer_top ul{
         left: 35%;
@@ -277,5 +278,26 @@
         flex-wrap: nowrap;
         float: left;
         margin:1rem 0 0rem 0rem;
+=======
+    .footer .footer_middle .footer_link{
+        height:10%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    .footer .footer_middle .footer_link .link_header{
+         float:left;
+         width:10%;
+         height:1rem;
+         margin: 1rem 0rem 0rem 1rem;
+     }
+    .footer .footer_middle .footer_link ul{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        float: left;
+        margin:1rem 0 0rem 1rem;
+>>>>>>> 2cfe40b7a1af8d1ab3eb78e946fb458b3f813846
     }
 }

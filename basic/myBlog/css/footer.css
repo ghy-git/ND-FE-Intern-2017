@@ -44,6 +44,10 @@
 }
 
 .footer section{
+<<<<<<< HEAD
+=======
+    height:50%;
+>>>>>>> 2cfe40b7a1af8d1ab3eb78e946fb458b3f813846
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
@@ -88,12 +92,15 @@
     left: 50%;
 
 }
+<<<<<<< HEAD
 .footer .footer_bottom{
     height: auto;
 }
 .footer .footer_middle{
     height: auto;
 }
+=======
+>>>>>>> 2cfe40b7a1af8d1ab3eb78e946fb458b3f813846
 
 .footer .footer_bottom img{
     padding-left:1.1rem;
