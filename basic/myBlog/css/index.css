@@ -1,0 +1,326 @@
+.index_section_01{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.index_section_01 img{
+    width:100%;
+    height:50%;         //为什么没变化
+
+}
+
+.index_section_01 .index_section_01_dis{
+    width: 25rem;
+    height:10rem;
+    padding:1rem;
+    background-color:rgba(255,255,255,0.3) ;
+
+    position:absolute;
+    bottom:0px;
+    right:10%;
+    right:10%;
+    padding:1rem;
+
+}
+
+.index_section_01 .index_section_01_dis h2{
+    margin:0px;
+    color:#FFFFFF;
+
+    text-align:right;
+    font-size: 1.5rem;
+}
+
+.index_section_01 .index_section_01_dis p{
+    color:#FFFFFF;
+    text-indent: 1.8em;
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+
+
+.index_section_02{
+    weight:100%;
+    margin:0 auto 0 auto;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.index_section_02 div{
+     width: 28%;
+     height: 70%;
+     text-align: center;
+     background-color: #fff;
+     padding:0;
+     margin:0.5rem 0.5rem 0 0;
+
+}
+
+.index_section_02 div img{
+    width: 95%;
+    height: 30%;
+    text-align: center;
+    padding:0.5rem 0 0 0;
+    margin:0;
+
+}
+
+.index_section_02 div p{
+    width:95%;
+    margin:1rem 0;
+    padding-left:0.8rem;
+    padding-right:0.8rem;
+    text-indent:1.5rem;
+    text-align: left;
+}
+
+.myIntroduce{
+    background-color: #FFFFFF;
+    position:relative;
+    margin:0px;
+    padding:8rem 0;
+}
+
+.myIntroduce img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 600px;
+
+    position: absolute;
+    top: -5rem;
+    left: 46%;
+}
+
+.myIntroduce h1 {
+    font-size:1.8rem;
+
+    text-align:center;
+}
+
+.myIntroduce p {
+    width: 50%;
+    text-indent: 1.8em;
+    font-size: 1.3rem;
+    padding:0;
+    margin: 0 auto;
+
+    text-align: left;
+    line-height: 2rem;
+}
+
+
+/*响应式开始*/
+@media screen and (max-width:800px){
+    /*header*/
+    .header{
+        width:100%;
+        height: 80px;
+    }
+
+    .header #myMame {
+        color:white;
+        width: 110px;
+        height: 20px;
+        position:absolute;
+        left: 30%;
+        bottom: 50%;
+        font-size: 200%;
+        margin: 0rem auto;
+    }
+
+    .header nav {
+        width: 50%;
+        height: 1rem;
+        position: absolute;
+        top:80px;
+        right: 0rem;
+    }
+
+    .header .header_ham {
+        width:2.5rem;
+        height:2rem;
+        float: right;
+        display:block;
+        cursor: pointer;
+        position: absolute;
+        right:3%;
+        top:-50px;
+    }
+
+    .header .header_ham span{
+        width: 2.5rem;
+        height: 5px;
+        float: right;
+        margin-top:0.2rem;
+    }
+
+
+    /*888888888888888888888888*/
+    .header nav ul{
+        width: 100%;
+        height: 0rem;
+        top: 0px;
+        right: 0;
+        z-index: 999;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header nav ul li{
+        width: 100%;
+        margin: 0;
+        background-color: #522A5C;
+        border-top: 1px solid #000000;
+        text-align: center;
+    }
+
+
+    .header .github{
+        display:none;
+    }
+
+    .showHam {
+        animation: showx 1.5s;
+        -webkit-animation: showx 1.5s;
+        -moz-animation: showx 1.5s;
+        -o-animation: showx 1.5s;
+        animation-fill-mode:forwards;
+    }
+
+    @keyframes showx {
+        from {height: 0rem;}
+        to {height: 10rem;}
+    }
+    @-moz-keyframes showx {
+        from {height: 0rem;}
+        to {height: 10rem;}
+    }
+    @-webkit-keyframes showx {
+        from {height: 0rem;}
+        to {height: 10rem;}
+    }
+    @-o-keyframes showx {
+        from {height: 0rem;}
+        to {height: 10rem;}
+    }
+    .hideHam {
+        animation: hide 1.5s;
+        -webkit-animation: hide 1.5s;
+        -moz-animation: hide 1.5s;
+        -o-animation: hide 1.5s;
+        animation-fill-mode:forwards;
+    }
+
+    @keyframes hide {
+        from {height: 10rem;}
+        to {height: 0rem;}
+    }
+    @-moz-keyframes hide {
+        from {height: 10rem;}
+        to {height: 0rem;}
+    }
+    @-webkit-keyframes hide {
+        from {height: 10rem;}
+        to {height: 0rem;}
+    }
+    @-o-keyframes hide {
+        from {height: 10rem;}
+        to {height: 0rem;}
+    }
+
+    /*middle*/    /*问题1 图片边距*/
+
+    .index_section_01 .index_section_01_dis{
+        width: 100%;
+        height:100%;
+        margin:0rem;
+        background-color:rgba(255,255,255,0.3) ;
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        padding:0rem;
+    }
+
+    .index_section_02{
+        weight:100%;
+        display:block;
+        padding:0 1rem;
+    }
+
+    .myIntroduce P{
+        width:90%;
+    }
+    .index_section_02 div{
+        width:100%;
+    }
+    main{
+        width:100%;
+    }
+
+    /*footer*/
+    .footer section{
+        height:100%;
+        display: block;
+        margin:3rem 0 0 0;
+        margin-top: 3rem;
+    }
+    .footer {
+        width: 100%;
+        height: 30rem;
+        margin:0 0;
+        position: relative;
+    }
+
+    .footer .footer_top ul{
+        left: 35%;
+    }
+
+
+    .footer .footer_middle .footer_link{
+        height:10%;
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: nowrap;
+    }
+    .footer .footer_middle .footer_link .link_header{
+        float:left;
+        width:10%;
+        height:1rem;
+        margin: 1rem 0rem 0rem 1rem;
+    }
+    .footer .footer_middle .footer_link ul {
+
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        float: left;
+        margin: 1rem 0 0rem 0rem;
+    }
+    .footer .footer_middle .footer_link{
+        height:10%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    .footer .footer_middle .footer_link .link_header{
+         float:left;
+         width:10%;
+         height:1rem;
+         margin: 1rem 0rem 0rem 1rem;
+     }
+    .footer .footer_middle .footer_link ul{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        float: left;
+        margin:1rem 0 0rem 1rem;
+    }
+}
