@@ -1,39 +1,46 @@
-.title_span{
-    cursor: pointer;
+.title_span {
+  cursor: pointer;
 }
 
-#h4{
-
-}
-#calender{
-    background-color: #FFFFFF;
-    margin:5%;
-    height: 100%;
-}
-.title_span{
-    margin: 0;
-    margin-left: 7%;
-}
-.main_span_title{
-    margin: 0;
-    margin-left: 7%;
-    text-align: center;
-}
-#allShell .main_title span:nth-child(1){
-    margin-left: 0;
+#calender {
+  background-color: #fff;
+  margin: 5%;
+  height: 100%;
 }
 
-.main{
-    display: flex;
-    justify-content: space-around;
+.title_span {
+  margin: 0;
+  margin-left: 7%;
 }
 
-.main .main_span,.main .main_span_hide{
-    margin: 0;
-    width:7%;
-    text-align: center;
+.main_span_title {
+  margin: 0;
+  width: 7%;
+  text-align: center;
 }
-.main .main_span_hide{
-    opacity:0.4;
+
+#allShell .main_title span:nth-child(1) {
+  margin-left: 0;
+}
+
+.main {
+  border-bottom: 0.16rem solid #eee;
+}
+
+.main,
+.main_title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .main_span,
+.main .main_span_hide {
+  margin: 0;
+  width: 7%;
+  text-align: center;
+}
+
+.main .main_span_hide {
+  opacity: 0.4;
 }
 

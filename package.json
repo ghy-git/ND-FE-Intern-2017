@@ -1,0 +1,26 @@
+{
+  "name": "calender",
+  "version": "1.0.0",
+  "description": "## 练习任务",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "style-loader": "^0.13.1",
+    "stylelint": "^7.8.0",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghy-git/ND-FE-Intern-2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghy-git/ND-FE-Intern-2017/issues"
+  },
+  "homepage": "https://github.com/ghy-git/ND-FE-Intern-2017#readme"
+  
+}

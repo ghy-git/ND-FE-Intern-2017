@@ -1,693 +1,644 @@
-main{
-    width:90%;
-    height:100%;
-    background-color: #EEEEEE;
+main {
+  width: 90%;
+  height: 100%;
+  background-color: #eee;
 }
 
-.main_aside{
-    width:100%;
-    height:65rem;
-    padding-top: 8rem;
-    padding-bottom: 2rem;
+.main_aside {
+  width: 100%;
+  height: 65rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* ï¿½ï¿½ï¿½ï¿½ */
+.main_aside .div_01 {
+  width: 40%;
+  margin: 0;
+  margin-right: 0.3rem;
+  background-color: #fff;
+  float: left;
+}
+
+.main_aside .div_01 #me img {
+  width: 10rem;
+  height: 10rem;
+  margin-left: -5rem;
+  border: 0.5rem solid #eee;
+  border-radius: 100rem;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+}
+
+.main_aside .div_01 #name {
+  font-size: 1.8rem;
+  width: 5rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 18rem;
+  left: 50%;
+  margin-left: -11rem;
+}
+
+.main_aside .div_01 #phone img {
+  width: 6rem;
+  height: 6rem;
+  margin-left: -3rem;
+  border: 0.3rem solid #eee;
+  border-radius: 100rem;
+  position: absolute;
+  top: 23rem;
+  left: 50%;
+}
+
+.main_aside .div_01 #tell {
+  font-size: 1.8rem;
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 32rem;
+  left: 50%;
+  margin-left: -12rem;
+}
+
+.main_aside .div_01 #building_01 img {
+  width: 6rem;
+  height: 6rem;
+  margin-left: -3rem;
+  border: 0.3rem solid #eee;
+  border-radius: 100rem;
+  position: absolute;
+  top: 38rem;
+  left: 50%;
+}
+
+.main_aside .div_01 #education {
+  font-size: 1.8rem;
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 48rem;
+  left: 50%;
+  margin-left: -12rem;
+}
+
+.main_aside .div_01 #building_02 img {
+  width: 6rem;
+  height: 6rem;
+  margin-left: -3rem;
+  border: 0.3rem solid #eee;
+  border-radius: 100rem;
+  position: absolute;
+  top: 53rem;
+  left: 50%;
+}
+
+.main_aside .div_01 #internship {
+  font-size: 1.8rem;
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 64rem;
+  left: 50%;
+  margin-left: -12rem;
+}
+
+/* ï¿½Ò±ï¿½ */
+.main_aside .div_02 {
+  width: 40%;
+  margin: 0;
+  background-color: #fff;
+  float: left;
+}
+
+.main_aside .div_02 #introduce {
+  font-size: 1.1rem;
+  width: 30%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 15rem;
+  left: 55%;
+}
+
+.main_aside .div_02 #tell_right {
+  font-size: 1.1rem;
+  width: 30%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 31rem;
+  left: 55%;
+}
+
+.main_aside .div_02 #tell_right ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main_aside .div_02 #education_right_01 {
+  font-size: 1.1rem;
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 45rem;
+  right: 50%;
+  margin-right: -15rem;
+}
+
+.main_aside .div_02 #education_right_02 {
+  font-size: 1.1rem;
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 47rem;
+  right: 50%;
+  margin-right: -15rem;
+}
+
+.main_aside .div_02 #education_right_02 span {
+  font-size: 0.8rem;
+}
+
+.main_aside .div_02 #education_right_03 {
+  font-size: 1.1rem;
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50rem;
+  right: 50%;
+  margin-right: -15rem;
+}
+
+.main_aside .div_02 #education_right_03 span {
+  font-size: 0.8rem;
+}
+
+.main_aside .div_02 #internship_right_01 {
+  font-size: 1.1rem;
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 62rem;
+  right: 50%;
+  margin-right: -15rem;
+}
+
+.main_aside .div_02 #internship_right_01 span {
+  font-size: 0.8rem;
+}
+
+.main_aside .div_02 #internship_right_02 {
+  font-size: 1.1rem;
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 66rem;
+  right: 50%;
+  margin-right: -15rem;
+}
+
+.main_aside .div_02 #internship_right_02 span {
+  font-size: 0.8rem;
+}
+
+.main_aside .div_02 .year .boder {
+  width: 4rem;
+  height: 1.5rem;
+  border: 0.3rem solid #eee;
+  border-radius: 100rem;
+  text-align: center;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2rem;
+  background-color: #fff;
+}
+
+.main_aside .div_02 .year #x08 {
+  top: 44.8rem;
+}
+
+.main_aside .div_02 .year #x11 {
+  top: 47.5rem;
+}
+
+.main_aside .div_02 .year #education_15 {
+  top: 50.5rem;
+}
+
+.main_aside .div_02 .year #x14 {
+  top: 62rem;
+}
+
+.main_aside .div_02 .year #x15 {
+  top: 66rem;
+}
+
+/* ï¿½ï¿½Ó¦Ê½ï¿½ï¿½Ê¼ ï¿½ï¿½Ò»ï¿½ï¿½ 1000px */
+@media screen and (max-width: 1000px) {
+  /* header */
+  .header {
+    width: 100%;
+    height: 80px;
+  }
+
+  .header #myMame {
+    color: white;
+    width: 110px;
+    height: 20px;
+    position: absolute;
+    left: 30%;
+    bottom: 50%;
+    font-size: 200%;
+    margin: 0 auto;
+  }
+
+  .header nav {
+    width: 50%;
+    height: 1rem;
+    position: absolute;
+    top: 80px;
+    right: 0;
+  }
+
+  .header .header_ham {
+    width: 2.5rem;
+    height: 2rem;
+    float: right;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: -50px;
+  }
+
+  .header .header_ham span {
+    width: 2.5rem;
+    height: 5px;
+    float: right;
+    margin-top: 0.2rem;
+  }
+
+  /* 888888888888888888888888 */
+  .header nav ul {
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header nav ul li {
+    width: 100%;
+    margin: 0;
+    background-color: #522a5c;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+
+  .header .github {
+    display: none;
+  }
+
+  .showHam {
+    animation: showx 1.5s;
+    -webkit-animation: showx 1.5s;
+    -moz-animation: showx 1.5s;
+    -o-animation: showx 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes showx {
+    from { height: 0; }
+    to { height: 10rem; }
+  }
+
+  @-moz-keyframes showx {
+    from { height: 0; }
+    to { height: 10rem; }
+  }
+
+  @-webkit-keyframes showx {
+    from { height: 0; }
+    to { height: 10rem; }
+  }
+
+  @-o-keyframes showx {
+    from { height: 0; }
+    to { height: 10rem; }
+  }
+
+  .hideHam {
+    animation: hide 1.5s;
+    -webkit-animation: hide 1.5s;
+    -moz-animation: hide 1.5s;
+    -o-animation: hide 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes hide {
+    from { height: 10rem; }
+    to { height: 0; }
+  }
+
+  @-moz-keyframes hide {
+    from { height: 10rem; }
+    to { height: 0; }
+  }
+
+  @-webkit-keyframes hide {
+    from { height: 10rem; }
+    to { height: 0; }
+  }
+
+  @-o-keyframes hide {
+    from { height: 10rem; }
+    to { height: 0; }
+  }
+
+  /* middle */
+  .main_aside .div_02 #introduce {
+    width: 30%;
+    height: 7rem;
+    overflow: scroll;
+    text-indent: 1rem;
+    position: absolute;
+    top: 15rem;
+    left: 55%;
+  }
+
+  .main_aside .div_02 #tell_right {
+    width: 30%;
+    height: 5rem;
+    overflow: scroll;
+    text-indent: 1rem;
+    position: absolute;
+    top: 31rem;
+    left: 50%;
+  }
+}
+
+/* ï¿½ï¿½Ó¦Ê½ï¿½ï¿½Ê¼   ï¿½ï¿½2ï¿½ï¿½580px */
+@media screen and (max-width: 580px) {
+  /* middle */
+  main {
+    width: 100%;
+  }
+
+  .main_aside {
+    width: 100%;
+    height: 65rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     position: relative;
+  }
 
-}
+  /* ï¿½ï¿½ï¿½ï¿½ */
+  .main_aside {
+    height: 40rem;
+  }
 
-/*×ó±ß*/
-.main_aside .div_01{
-    width:40%;
-    margin:0px;
-    margin-right: 0.3rem;
-    background-color: #FFFFFF;
-    float:left;
-}
+  .main_aside .div_01 {
+    width: 46%;
+    margin-right: 0.2rem;
+  }
 
-.main_aside .div_01 #me img{
-    width:10rem;
-    height:10rem;
-    margin-left: -5rem;
-    border: 0.5rem solid #EEEEEE;
-    border-radius: 100rem;
-
+  .main_aside .div_01 #me img {
+    width: 5rem;
+    height: 5rem;
+    margin-left: -2.5rem;
+    border: 0.3rem solid #eee;
     position: absolute;
-    top:4rem;
-    left:50%;
+    top: 2rem;
+  }
 
-}
-.main_aside .div_01 #name{
-    font-size: 1.8rem;
-    width:5rem;
-    padding:0;
-    margin:0;
-
-    position: absolute;
-    top:18rem;
-    left:50%;
-    margin-left:-11rem;
-}
-
-
-.main_aside .div_01 #phone img{
-    width:6rem;
-    height:6rem;
-    margin-left: -3rem;
-    border: 0.3rem solid #EEEEEE;
-    border-radius: 100rem;
-
-    position: absolute;
-    top:23rem;
-    left:50%;
-
-}
-.main_aside .div_01 #tell{
-    font-size: 1.8rem;
-    width:10rem;
-    padding:0;
-    margin:0;
-
-    position: absolute;
-    top:32rem;
-    left:50%;
-    margin-left:-12rem;
-}
-
-.main_aside .div_01 #building_01 img{
-    width:6rem;
-    height:6rem;
-    margin-left: -3rem;
-    border: 0.3rem solid #EEEEEE;
-    border-radius: 100rem;
-
-    position: absolute;
-    top:38rem;
-    left:50%;
-
-}
-.main_aside .div_01 #education{
-    font-size: 1.8rem;
-    width:10rem;
-    padding:0;
-    margin:0;
-
-    position: absolute;
-    top:48rem;
-    left:50%;
-    margin-left:-12rem;
-}
-
-.main_aside .div_01 #building_02 img{
-    width:6rem;
-    height:6rem;
-    margin-left: -3rem;
-    border: 0.3rem solid #EEEEEE;
-    border-radius: 100rem;
-
-    position: absolute;
-    top:53rem;
-    left:50%;
-
-}
-.main_aside .div_01 #internship{
-    font-size: 1.8rem;
-    width:10rem;
-    padding:0;
-    margin:0;
-
-    position: absolute;
-    top:64rem;
-    left:50%;
-    margin-left:-12rem;
-}
-
-/*ÓÒ±ß*/
-
-.main_aside .div_02{
-    width:40%;
-    margin:0px;
-    background-color: #FFFFFF;
-    float:left;
-}
-
-.main_aside .div_02 #introduce{
+  .main_aside .div_01 #name {
     font-size: 1.1rem;
-    width:30%;
-    padding:0;
-    margin:0;
-
     position: absolute;
-    top:15rem;
-    left:55%;
-}
+    top: 9rem;
+    left: 80%;
+  }
 
-.main_aside .div_02 #tell_right{
+  .main_aside .div_01 #phone img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: -1.75rem;
+    border: 0.2rem solid #eee;
+    position: absolute;
+    top: 12rem;
+  }
+
+  .main_aside .div_01 #tell {
     font-size: 1.1rem;
-    width:30%;
-    padding:0;
-    margin:0;
-
     position: absolute;
-    top:31rem;
-    left:55%;
-}
-.main_aside .div_02 #tell_right ul{
-    padding:0px;
-    margin:0px;
-    list-style-type: none;
-}
+    top: 17rem;
+    left: 80%;
+  }
 
-.main_aside .div_02 #education_right_01{
+  .main_aside .div_01 #building_01 img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: -1.75rem;
+    border: 0.2rem solid #eee;
+    position: absolute;
+    top: 20rem;
+  }
+
+  .main_aside .div_01 #education {
     font-size: 1.1rem;
-    width:10rem;
-    padding:0;
-    margin:0;
-
     position: absolute;
-    top:45rem;
-    right:50%;
-    margin-right:-15rem;
-}
-.main_aside .div_02 #education_right_02{
+    top: 27rem;
+    left: 80%;
+  }
+
+  .main_aside .div_01 #building_02 img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: -1.75rem;
+    border: 0.2rem solid #eee;
+    position: absolute;
+    top: 30rem;
+  }
+
+  .main_aside .div_01 #internship {
     font-size: 1.1rem;
-    width:10rem;
-    padding:0;
-    margin:0;
-
     position: absolute;
-    top:47rem;
-    right:50%;
-    margin-right:-15rem;
-}
-.main_aside .div_02 #education_right_02 span{
+    top: 36rem;
+    left: 80%;
+  }
+
+  /* ï¿½Ò±ï¿½ */
+  .main_aside .div_02 {
+    width: 46%;
+  }
+
+  .main_aside .div_02 #introduce {
+    font-size: 0.7rem;
+    width: 40%;
+    height: 4rem;
+    overflow: scroll;
+    text-indent: 1rem;
+    position: absolute;
+    top: 7.5rem;
+    left: 55%;
+  }
+
+  .main_aside .div_02 #tell_right {
     font-size: 0.8rem;
-}
-
-.main_aside .div_02 #education_right_03{
-    font-size: 1.1rem;
-    width:10rem;
-    padding:0;
-    margin:0;
-
+    width: 40%;
+    overflow: scroll;
+    text-indent: 1rem;
     position: absolute;
-    top:50rem;
-    right:50%;
-    margin-right:-15rem;
-}
-.main_aside .div_02 #education_right_03 span{
-    font-size: 0.8rem;
-}
-
-.main_aside .div_02 #internship_right_01{
-    font-size: 1.1rem;
-    width:10rem;
-    padding:0;
-    margin:0;
-
-    position: absolute;
-    top:62rem;
-    right:50%;
-    margin-right:-15rem;
-}
-.main_aside .div_02 #internship_right_01 span{
-    font-size: 0.8rem;
-}
-
-.main_aside .div_02 #internship_right_02{
-    font-size: 1.1rem;
-    width:10rem;
-    padding:0;
-    margin:0;
-
-    position: absolute;
-    top:66rem;
-    right:50%;
-    margin-right:-15rem;
-}
-.main_aside .div_02 #internship_right_02 span{
-    font-size: 0.8rem;
-}
-
-.main_aside .div_02 .year .boder{
-    width: 4rem;
-    height: 1.5rem;
-    border:0.3rem solid #EEEEEE;
-    border-radius: 100rem;
-    text-align: center;
-    font-size: 1.2rem;
-
-    position: absolute;
+    top: 16.5rem;
     left: 50%;
-    margin-left: -2rem;
-    background-color: #fff;
-}
-.main_aside .div_02 .year #x08{
-    top:44.8rem;
-}
-.main_aside .div_02 .year #x11{
-    top:47.5rem;
-}
-.main_aside .div_02 .year #education_15{
-    top:50.5rem;
-}
-.main_aside .div_02 .year #x14{
-    top:62rem;
-}
-.main_aside .div_02 .year #x15{
-    top:66rem;
-}
-
-/*ÏìÓ¦Ê½¿ªÊ¼ µÚÒ»¶Î 1000px*/
-@media screen and (max-width:1000px) {
-    /*header*/
-    .header{
-        width:100%;
-        height: 80px;
-    }
-
-    .header #myMame {
-        color:white;
-        width: 110px;
-        height: 20px;
-        position:absolute;
-        left: 30%;
-        bottom: 50%;
-        font-size: 200%;
-        margin: 0rem auto;
-    }
-
-    .header nav {
-        width: 50%;
-        height: 1rem;
-        position: absolute;
-        top:80px;
-        right: 0rem;
-    }
-
-    .header .header_ham {
-        width:2.5rem;
-        height:2rem;
-        float: right;
-        display:block;
-        cursor: pointer;
-        position: absolute;
-        right:3%;
-        top:-50px;
-    }
-
-    .header .header_ham span{
-        width: 2.5rem;
-        height: 5px;
-        float: right;
-        margin-top:0.2rem;
-    }
-
-
-    /*888888888888888888888888*/
-    .header nav ul{
-        width: 100%;
-        height: 0rem;
-        top: 0px;
-        right: 0;
-        z-index: 999;
-        overflow: hidden;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header nav ul li{
-        width: 100%;
-        margin: 0;
-        background-color: #522A5C;
-        border-top: 1px solid #000000;
-        text-align: center;
-    }
-
-
-    .header .github{
-        display:none;
-    }
-
-    .showHam {
-        animation: showx 1.5s;
-        -webkit-animation: showx 1.5s;
-        -moz-animation: showx 1.5s;
-        -o-animation: showx 1.5s;
-        animation-fill-mode:forwards;
-    }
-
-    @keyframes showx {
-        from {height: 0rem;}
-        to {height: 10rem;}
-    }
-    @-moz-keyframes showx {
-        from {height: 0rem;}
-        to {height: 10rem;}
-    }
-    @-webkit-keyframes showx {
-        from {height: 0rem;}
-        to {height: 10rem;}
-    }
-    @-o-keyframes showx {
-        from {height: 0rem;}
-        to {height: 10rem;}
-    }
-    .hideHam {
-        animation: hide 1.5s;
-        -webkit-animation: hide 1.5s;
-        -moz-animation: hide 1.5s;
-        -o-animation: hide 1.5s;
-        animation-fill-mode:forwards;
-    }
-
-    @keyframes hide {
-        from {height: 10rem;}
-        to {height: 0rem;}
-    }
-    @-moz-keyframes hide {
-        from {height: 10rem;}
-        to {height: 0rem;}
-    }
-    @-webkit-keyframes hide {
-        from {height: 10rem;}
-        to {height: 0rem;}
-    }
-    @-o-keyframes hide {
-        from {height: 10rem;}
-        to {height: 0rem;}
-    }
-
-    /*middle*/
-    .main_aside .div_02 #introduce{
-        width:30%;
-        height:7rem;
-        overflow: scroll;
-        text-indent: 1rem;
-
-        position: absolute;
-        top:15rem;
-        left:55%;
-    }
-
-    .main_aside .div_02 #tell_right{
-        width:30%;
-        height:5rem;
-        overflow: scroll;
-        text-indent: 1rem;
-
-        position: absolute;
-        top:31rem;
-        left:50%;
-    }
-
-}
-
-
-/*ÏìÓ¦Ê½¿ªÊ¼   µÚ2¶Î580px */
-@media screen and (max-width:580px) {
-    /*middle*/
-    main{
-        width:100%;
-    }
-    .main_aside{
-        width:100%;
-        height:65rem;
-        padding-top: 4rem;
-        padding-bottom: 1rem;
-        display: flex;
-        justify-content: center;
-        position: relative;
-
-    }
-
-    /*×ó±ß*/
-    .main_aside{
-        height:40rem;
-    }
-    .main_aside .div_01{
-        width:46%;
-        margin-right: 0.2rem;
-    }
-
-    .main_aside .div_01 #me img{
-        width:5rem;
-        height:5rem;
-        margin-left: -2.5rem;
-        border: 0.3rem solid #EEEEEE;
-
-        position: absolute;
-        top:2rem;
-
-    }
-    .main_aside .div_01 #name{
-        font-size: 1.1rem;
-
-        position: absolute;
-        top:9rem;
-        left:80%;
-    }
-
-
-    .main_aside .div_01 #phone img{
-        width:3.5rem;
-        height:3.5rem;
-        margin-left: -1.75rem;
-        border: 0.2rem solid #EEEEEE;
-
-        position: absolute;
-        top:12rem;
-
-    }
-    .main_aside .div_01 #tell{
-        font-size: 1.1rem;
-
-        position: absolute;
-        top:17rem;
-        left:80%;
-    }
-
-    .main_aside .div_01 #building_01 img{
-        width:3.5rem;
-        height:3.5rem;
-        margin-left: -1.75rem;
-        border: 0.2rem solid #EEEEEE;
-
-        position: absolute;
-        top:20rem;
-
-    }
-    .main_aside .div_01 #education{
-        font-size: 1.1rem;
-
-        position: absolute;
-        top:27rem;
-        left:80%;
-    }
-
-    .main_aside .div_01 #building_02 img{
-        width:3.5rem;
-        height:3.5rem;
-        margin-left: -1.75rem;
-        border: 0.2rem solid #EEEEEE;
-
-        position: absolute;
-        top:30rem;
-
-    }
-    .main_aside .div_01 #internship{
-        font-size: 1.1rem;
-
-        position: absolute;
-        top:36rem;
-        left:80%;
-    }
-
-    /*ÓÒ±ß*/
-
-    .main_aside .div_02{
-        width:46%;
-    }
-
-    .main_aside .div_02 #introduce{
-        font-size: 0.7rem;
-        width:40%;
-        height:4rem;
-        overflow: scroll;
-        text-indent: 1rem;
-
-        position: absolute;
-        top:7.5rem;
-        left:55%;
-    }
-
-    .main_aside .div_02 #tell_right{
-        font-size: 0.8rem;
-        width:40%;
-        overflow: scroll;
-        text-indent: 1rem;
-
-        position: absolute;
-        top:16.5rem;
-        left:50%;
-    }
-
-
-    .main_aside .div_02 #education_right_01{
-        font-size: 0.8rem;
-        width:30%;
-
-        position: absolute;
-        top:24rem;
-        left:58%;
-    }
-    .main_aside .div_02 #education_right_02{
-        font-size: 0.8rem;
-        width:30%;
-
-        position: absolute;
-        top:25.5rem;
-        left:58%;
-    }
-    .main_aside .div_02 #education_right_02 span{
-        font-size: 0.7rem;
-    }
-
-    .main_aside .div_02 #education_right_03{
-        font-size: 0.8rem;
-        width:30%;
-
-        position: absolute;
-        top:28rem;
-        left:58%;
-    }
-    .main_aside .div_02 #education_right_03 span{
-        font-size: 0.7rem;
-    }
-
-    .main_aside .div_02 #internship_right_01{
-        font-size: 0.8rem;
-        width:30%;
-
-        position: absolute;
-        top:34rem;
-        left:58%;
-    }
-    .main_aside .div_02 #internship_right_01 span{
-        font-size: 0.7rem;
-    }
-
-    .main_aside .div_02 #internship_right_02{
-        font-size: 0.8rem;
-        width:30%;
-
-        position: absolute;
-        top:37rem;
-        left:58%;
-    }
-    .main_aside .div_02 #internship_right_02 span{
-        font-size: 0.7rem;
-    }
-
-    .main_aside .div_02 .year .boder{
-        width: 2.5rem;
-        height: 0.8rem;
-        border:0.2rem solid #EEEEEE;
-        border-radius: 100rem;
-        font-size: 1rem;
-        line-height: 0.85rem;
-
-        position: absolute;
-        left: 52.5%;
-    }
-    .main_aside .div_02 .year #x08{
-        top:24rem;
-    }
-    .main_aside .div_02 .year #x11{
-        top:26rem;
-    }
-    .main_aside .div_02 .year #education_15{
-        top:28.3rem;
-    }
-    .main_aside .div_02 .year #x14{
-        top:34.5rem;
-    }
-    .main_aside .div_02 .year #x15{
-        top:37.5rem;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*footer*/
-    .footer section{
-        height:100%;
-        display: block;
-        margin:3rem 0 0 0;
-        margin-top: 3rem;
-    }
-    .footer {
-        width: 100%;
-        height: 30rem;
-        margin:0 0;
-        position: relative;
-    }
-
-    .footer .footer_top ul{
-        left: 35%;
-    }
-
-
-    .footer .footer_middle .footer_link{
-        height:10%;
-        display: flex;
-        justify-content:flex-start;
-        flex-wrap: nowrap;
-    }
-    .footer .footer_middle .footer_link .link_header{
-        float:left;
-        width:10%;
-        height:1rem;
-        margin: 1rem 0rem 0rem 1rem;
-    }
-    .footer .footer_middle .footer_link ul{
-
-        width: 70%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        float: left;
-        margin:1rem 0 0rem 0rem;
-    }
+  }
+
+  .main_aside .div_02 #education_right_01 {
+    font-size: 0.8rem;
+    width: 30%;
+    position: absolute;
+    top: 24rem;
+    left: 58%;
+  }
+
+  .main_aside .div_02 #education_right_02 {
+    font-size: 0.8rem;
+    width: 30%;
+    position: absolute;
+    top: 25.5rem;
+    left: 58%;
+  }
+
+  .main_aside .div_02 #education_right_02 span {
+    font-size: 0.7rem;
+  }
+
+  .main_aside .div_02 #education_right_03 {
+    font-size: 0.8rem;
+    width: 30%;
+    position: absolute;
+    top: 28rem;
+    left: 58%;
+  }
+
+  .main_aside .div_02 #education_right_03 span {
+    font-size: 0.7rem;
+  }
+
+  .main_aside .div_02 #internship_right_01 {
+    font-size: 0.8rem;
+    width: 30%;
+    position: absolute;
+    top: 34rem;
+    left: 58%;
+  }
+
+  .main_aside .div_02 #internship_right_01 span {
+    font-size: 0.7rem;
+  }
+
+  .main_aside .div_02 #internship_right_02 {
+    font-size: 0.8rem;
+    width: 30%;
+    position: absolute;
+    top: 37rem;
+    left: 58%;
+  }
+
+  .main_aside .div_02 #internship_right_02 span {
+    font-size: 0.7rem;
+  }
+
+  .main_aside .div_02 .year .boder {
+    width: 2.5rem;
+    height: 0.8rem;
+    border: 0.2rem solid #eee;
+    border-radius: 100rem;
+    font-size: 1rem;
+    line-height: 0.85rem;
+    position: absolute;
+    left: 52.5%;
+  }
+
+  .main_aside .div_02 .year #x08 {
+    top: 24rem;
+  }
+
+  .main_aside .div_02 .year #x11 {
+    top: 26rem;
+  }
+
+  .main_aside .div_02 .year #education_15 {
+    top: 28.3rem;
+  }
+
+  .main_aside .div_02 .year #x14 {
+    top: 34.5rem;
+  }
+
+  .main_aside .div_02 .year #x15 {
+    top: 37.5rem;
+  }
+
+  /* footer */
+  .footer section {
+    height: 100%;
+    display: block;
+    margin: 3rem 0 0;
+    margin-top: 3rem;
+  }
+
+  .footer {
+    width: 100%;
+    height: 30rem;
+    margin: 0;
+    position: relative;
+  }
+
+  .footer .footer_top ul {
+    left: 35%;
+  }
+
+  .footer .footer_middle .footer_link {
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .footer .footer_middle .footer_link .link_header {
+    float: left;
+    width: 10%;
+    height: 1rem;
+    margin: 1rem 0 0 1rem;
+  }
+
+  .footer .footer_middle .footer_link ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    float: left;
+    margin: 1rem 0 0;
+  }
 }
