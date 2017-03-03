@@ -232,62 +232,41 @@ function getPosition (element) {
 }
 
 // 实现一个简单的Query
-// getElementById
-function idd (id, doc) {
-  return document.getElementById(id)
-}
+// getElementById ---第一版 有逻辑错误 查属性有问题
+// function idd (id, doc) {
+//   return document.getElementById(id)
+// }
 
-// getElementsByClassName
-function clazz (clazzName, doc) {
-  if (doc === null) {
-    return document.getElementsByClassName(clazzName)
-  } else {
-    return doc.getElementsByClassName(clazzName)
-  }
-}
+// // getElementsByClassName
+// function clazz (clazzName, doc) {
+//   if (doc === null) {
+//     return document.getElementsByClassName(clazzName)
+//   } else {
+//     return doc.getElementsByClassName(clazzName)
+//   }
+// }
 
-// getElementsByTagName
-function tagg (tag, doc) {
-  if (doc === null) {
-    return document.getElementsByTagName(tag)
-  } else {
-    return doc.getElementsByTagName(tag)
-  }
-}
+// // getElementsByTagName
+// function tagg (tag, doc) {
+//   if (doc === null) {
+//     return document.getElementsByTagName(tag)
+//   } else {
+//     return doc.getElementsByTagName(tag)
+//   }
+// }
 
-// getElementsByTagName
-function attr (attr, doc) {
-    if (selector.indexOf("=") === -1) {
-        allChildren = root.getElementsByTagName("*");
-        for (var i = 0, len = allChildren.length; i < len; i++) {
-            if (allChildren[i].getAttribute(selector.slice(1, -1)) !== null) {
-                elements.push(allChildren[i]);
-            }
-        }
-    } else {
-        var index = selector.indexOf("=");
-        allChildren = root.getElementsByTagName("*");
-        for (var i = 0, len = allChildren.length; i < len; i++) {
-            if (allChildren[i].getAttribute(selector.slice(1, index)) === selector.slice(index + 1, -1)) {
-                elements.push(allChildren[i]);
-            }
-        }
-    }
-}
-
-function $ (selector) {
-  const arr = selector.split(' ')
-  let doc = null
-  for (const o in arr) {
-    switch (arr[o].charAt(0)) {
-      case '#': { doc = idd(arr[o].substring(1), doc); console.log(doc + '---' + doc.id + '---' + doc.innerHTML) } break
-      case '.': { doc = clazz(arr[o].substring(1), doc).item(0); console.log(doc + '---' + doc.id + '---' + doc.innerHTML) } break
-      case '[': { doc = attr(arr[o].substring(1, arr[o].indexOf(']')), doc); console.log(doc + '---' + doc.id + '---' + doc.innerHTML) } break
-      default : { doc = tagg(arr[o].substring(0), doc).item(0); console.log(doc + '---' + doc.id + '---' + doc.innerHTML) } break
-    }
-  }
-  return doc
-}
+// function $ (selector) {
+//   const arr = selector.split(' ')
+//   let doc = null
+//   for (const o in arr) {
+//     switch (arr[o].charAt(0)) {
+//       case '#': { doc = idd(arr[o].substring(1), doc); console.log(doc + '---' + doc.id + '---' + doc.innerHTML) } break
+//       case '.': { doc = clazz(arr[o].substring(1), doc).item(0); console.log(doc + '---' + doc.id + '---' + doc.innerHTML) } break
+//       default : { doc = tagg(arr[o].substring(0), doc).item(0); console.log(doc + '---' + doc.id + '---' + doc.innerHTML) } break
+//     }
+//   }
+//   return doc
+// }
 
 // 事件的学习
 // 给一个element绑定一个针对event事件的响应，响应函数为listener
