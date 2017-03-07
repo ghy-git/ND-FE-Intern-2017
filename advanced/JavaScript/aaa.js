@@ -1,5 +1,4 @@
-let indexaaa = 1
-function $$ (selector, doc) {
+function action (selector, doc) {
   if (selector === undefined) {
     return doc
   }
@@ -48,13 +47,14 @@ function $$ (selector, doc) {
   }
   return elems
 }
-function Q (selector) {
+function $ (selector) {
   selector = selector.trim()
   const arr = selector.split(' ')
-  let doc = $$(arr[0], this.doc)
+  const indexaaa = 1
+  let doc = action(arr[0], this.doc)
   for (let o = 0; o < arr[0].length - 1; o++) {
-    doc = $$(arr[o + indexaaa], doc)
+    doc = action(arr[o + indexaaa], doc)
   }
-  console.log(doc[0].childNodes[1])     //添加string后 就变成string了
+  console.log(doc[0].childNodes[1])     // 添加string后 就变成string了
   return doc
 }
