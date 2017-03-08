@@ -5,33 +5,38 @@ body {
 }
 
 .shell {
-  width: 25%;
+  width: 50%;
   height: 80%;
   background-color: #eee;
-  margin: 1% 0 0 37.5%;
+  margin: 1% 0 0 30%;
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 
 .shell .shell_left {
-  width: 100.5%;
-  height: 96%;
+  width: 70%;
+  height: 94%;
   background-color: #fff;
   margin: 3% 0 0 3%;
 }
 
+.shell .shell_middle {
+  width: 80%;
+  height: 94%;
+}
+
 .shell .shell_right {
-  width: 100.5%;
-  height: 96%;
+  width: 70%;
+  height: 94%;
   background-color: #fff;
   margin: 3% 3% 0;
 }
 
 .shell .shell_left div,
 .shell .shell_right div {
-  width: 93%;
+  width: 28%;
   height: 10%;
-  background-color: lightseagreen;
   border: 1px solid black;
-  margin: 0.5% 0 0 3%;
+  /* margin: 0.6% 0 0 0.5%; */
 }

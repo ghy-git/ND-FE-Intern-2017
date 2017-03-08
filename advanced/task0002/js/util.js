@@ -377,6 +377,15 @@ function delegateEvent (element, tag, eventName, listener) {
     }
   })
 }
+function delegateEventDiv (element, divClass, eventName, listener) {
+  return addEvent(element, eventName, function (ev) {
+    const onEvent = ev || event
+    const target = onEvent.target || onEvent.srcElement
+    if (target.className.toLowerCase() === divClass) {
+      listener.call(target, onEvent)
+    }
+  })
+}
 
 // 变成$对象的方法
 $.on = function (element, type, listener) {
@@ -428,6 +437,17 @@ function getCookie (cookieName) {
   }
   return 'not find cookieName:' + cookieName
 }
+
+//  获取当前元素在同级元素的索引
+function getIndex (element) {
+  const aBrother = element.parentNode.children
+  for (let i = 0, len = aBrother.length; i < len; i++) {
+    if (aBrother[i] === element) {
+      return i
+    }
+  }
+}
+
 
 // util测试函数
 function testString (element) {
