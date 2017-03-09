@@ -1,0 +1,48 @@
+body {
+  height: 55rem;
+  margin: 0;
+  padding: 0;
+}
+
+.shell {
+  width: 50%;
+  height: 80%;
+  background-color: #eee;
+  margin: 1% 0 0 30%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.shell .shell_left {
+  width: 70%;
+  height: 94%;
+  background-color: #fff;
+  margin: 3% 0 0 3%;
+}
+
+.shell .shell_middle {
+  width: 80%;
+  height: 94%;
+}
+
+.shell .shell_right {
+  width: 70%;
+  height: 94%;
+  background-color: #fff;
+  margin: 3% 3% 0;
+}
+
+.shell .shell_left div,
+.shell .shell_right div {
+  width: 28%;
+  height: 10%;
+  border: 1px solid black;
+  /* margin: 0.6% 0 0 0.5%; */
+}
+
+.move {
+  opacity: 0.8;
+  transform: scale(1.02, 0.8);
+  transition: transform 0.05s;
+}

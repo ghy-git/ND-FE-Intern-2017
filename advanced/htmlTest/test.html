@@ -1,0 +1,37 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>TestJs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no">
+  </head>
+  <body>
+    <button type="button" onclick="test()">深度克隆测试</button>
+    <button type="button" onclick="uniqArrayTest()">uniqArray测试</button>
+    <button type="button" onclick="trimTest()">trimTest测试</button>
+    <button type="button" onclick="eachListTest()">eachListTest</button>
+    <button type="button" onclick="eachOnelineTest()">eachOnelineTest</button>
+    <button type="button" onclick="getObjectLengthTest()">getObjectLengthTest</button>
+    <button type="button" onclick="isEmailTest()">isEmailTest</button>
+    <button id="addClassTest" class="test" type="button" onclick="addClassTest()">addClassTest</button>
+    <button id="$" class="test" type="button" onclick="$('#one .two [data-log]')">$</button>
+    <button type="button" onclick="testString()">我是测试函数</button>
+    <button type="button" onclick="isIE()">isIE</button>
+
+    <div id="one">
+      <div class="two" id="two">
+        <div class="three" data-log="222">
+          <div id="inner">aaaaaa</div>
+        </div>
+      </div>
+      <div class="two" id="twow">
+        <div class="three" data-log="222">
+          <div id="innerw">aaaaaa</div>
+        </div>
+      </div>
+    </div>
+  </body>
+    <script src="../JavaScript/util.js"></script>
+    <script src="../JavaScript/aaa.js"></script>
+</html>
