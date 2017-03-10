@@ -21,7 +21,10 @@
   const outList = $('#list')[0]
   const butt = $('#butt')[0]
   const error = $('#error')[0]
+
   $.click(butt, function () {
+    // 清除前一个点击事件的checkbox内容
+    outList.innerHTML = ''
     const text = trim(input.value)
     const list = text.split(/\n|\s+|,|，|、|;|；/)    // 没找到全角半角空格 就用\s代替
     const uniqArrayList = uniqArray(list)

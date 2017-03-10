@@ -39,10 +39,10 @@ function isHit (obj1, obj2) {
 }
 
 // 搜索最近的元素
-function findNear (obj) {
+function findNear (obj, innerList) {
   let min = 99999999
   let minIndex = 100
-  const innerList = $('#shell')[0].getElementsByClassName('inner')
+  // const innerList = $('#shell')[0].getElementsByClassName('inner')
   for (let i = 0, len = innerList.length; i < len; i++) {
     if (obj === innerList[i]) {
       continue
@@ -63,9 +63,9 @@ function findNear (obj) {
   }
 }
 
-function insertDiv (obj, parent, createDiv) {
+function insertDiv (obj, parent, createDiv, innerList) {
   if (isHit(obj, parent)) {
-    const innerList = parent.getElementsByClassName('inner')
+    // const innerList = parent.getElementsByClassName('inner')
     const length = innerList.length
     parent.appendChild(obj)
     // 新父元素内没有div的情况
@@ -117,7 +117,8 @@ function task0002_3 () {
   const shell = $('#shell')[0]
   const shell_left = $('#shell_left')[0]
   const shell_right = $('#shell_right')[0]
-  const innerList = shell.getElementsByClassName('inner')
+  const tagName = 'inner'
+  const innerList = shell.getElementsByClassName(tagName)
   let zIndex = 2
   init(shell, innerList)
 
@@ -127,51 +128,66 @@ function task0002_3 () {
     const inDivY = oEvent.clientY - this.offsetTop
     zIndex++
     this.style.zIndex = zIndex
-    const that = this
-    addEvent(document, 'mousemove', onmousemove)
-    addEvent(document, 'mouseup', onmouseup)
+    let that = this
+    console.log(zIndex, that)
     const creatediv = createDiv('div', that)
     const createdivLeft = parseInt(creatediv.style.left)
     const createdivTop = parseInt(creatediv.style.top)
     const createdivPar = creatediv.parentNode
+    addEvent(document, 'mousemove', mouseMove)
+    addEvent(document, 'mouseup', mouseUp)          // 这两个写法有什么区别？？？ 第二种方法会出错 that的值还是上一个的
+    // addEvent(document, 'mouseup', function () {
+    //   mouseUp(tagName)
+    //   // console.log('mouseup------over')
+    //   // console.log(that)
+    //   that = null
+    // })
 
     // 监听函数
-    function onmousemove (ev) {
+    function mouseMove (ev) {
       const oEvent = ev || event
 
       const dragL = oEvent.clientX - inDivX
       const dragT = oEvent.clientY - inDivY
       that.style.left = dragL + 'px'
       that.style.top = dragT + 'px'
+      console.log('mouseMove------')
+      console.log(that)
 
       // 动画效果添加
       for (let i = 0, len = innerList.length; i < len; i++) {
         removeClass(innerList[i], 'move')
       }
-      const isNear = findNear(that)
+      const isNear = findNear(that, innerList)
       if (isNear) {
         addClass(isNear, 'move')
       }
     }
 
     // 监听函数
-    function onmouseup () {
-      removeEvent(document, 'mousemove', onmousemove)
-      removeEvent(document, 'mouseup', onmouseup)
+    function mouseUp () {
+      console.log('mouseUp------')
+      console.log(that)
+      const shell_rightList = shell_right.getElementsByClassName(tagName)
+      const shell_leftList = shell_left.getElementsByClassName(tagName)
+      removeEvent(document, 'mousemove', mouseMove)
+      removeEvent(document, 'mouseup', mouseUp)
 
       // 清除动画效果
       for (let i = 0, len = innerList.length; i < len; i++) {
         removeClass(innerList[i], 'move')
       }
-      const isNear = findNear(that)
+      console.log('mouseUp222------')
+      console.log(that)
+      const isNear = findNear(that, innerList)
       // if (isNear) {
       //   addClass(isNear, 'move')
 
       if (isNear) {
         if (that.parentNode !== isNear.parentNode) {
           isNear.parentNode.insertBefore(that, isNear)    // 执行insertBefore这个函数之后 原来位置的删除了 所以不用再次删除that 否则会出事
-          const isNearLi = isNear.parentNode.getElementsByClassName('inner')
-          const thatLi = createdivPar.getElementsByClassName('inner')
+          const isNearLi = isNear.parentNode.getElementsByClassName(tagName)
+          const thatLi = createdivPar.getElementsByClassName(tagName)
 
           // 处理isNear这边的位置绘制
           that.style.left = isNear.style.left
@@ -200,9 +216,9 @@ function task0002_3 () {
         token = 1
       } else {
         if (that.parentNode === shell_left) {
-          insertDiv(that, shell_right, creatediv)
+          insertDiv(that, shell_right, creatediv, shell_rightList)
         } else {
-          insertDiv(that, shell_left, creatediv)
+          insertDiv(that, shell_left, creatediv, shell_leftList)
         }
       }
       if (token === 0) {
@@ -211,6 +227,7 @@ function task0002_3 () {
       }
       creatediv.parentNode.removeChild(creatediv)
       that.style.opacity = '1'
+      token = 0
     }
   }
   // 事件代理
