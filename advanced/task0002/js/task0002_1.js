@@ -16,7 +16,7 @@
 // })() // 匿名函数会自动执行
 
 // 第二阶段
-(function task2_1() {
+(function task2_1 () {
   const input = $('#input')[0]
   const outList = $('#list')[0]
   const butt = $('#butt')[0]
